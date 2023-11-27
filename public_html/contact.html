@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+    <head>
+        <title>Trónok harca - Kapcsolat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logo">
+            <a href="index.html">
+                <figure>
+                    <img src="photos/logo.png" alt="Logó">
+                </figure>
+            </a>
+        </div>
+        <header>
+            <div class="menu">
+                <nav>
+                    <a href="index.html">Kezdőlap</a>
+                    <a href="actors.html">Szereplők</a>
+                    <a href="houses.html">Főbb házak</a>
+                    <a class="active" href="contact.html">Kapcsolat</a>
+                </nav>
+            </div>
+        </header>
+        <div style="background-image: url('photos/got.png')">
+            <div class="contact">
+                <form action="mailto:czkristof@caesar.elte.hu" method="post">
+                    <p>Mi a véleményed a sorozatról? (Ha láttad)</p>
+                    <textarea maxlength="275" name="message" placeholder="Vélemény.." ></textarea>
+                    <p>Mennyire tetszett a sorozat?</p>
+
+                    <label for="1">1</label>
+                    <input type="radio" name="number" id="1" value="1">
+                    <span class="break2"></span>
+                    <label for="2">2</label>
+                    <input type="radio" name="number" id="2" value="2">
+                    <span class="break2"></span>
+                    <label for="3">3</label>
+                    <input type="radio" name="number" id="3" value="3">
+                    <span class="break2"></span>
+                    <label for="4">4</label>
+                    <input type="radio" name="number" id="4" value="4">
+                    <span class="break2"></span>
+                    <label for="5">5</label>
+                    <input type="radio" name="number" id="5" value="5">
+                    <span class="break2"></span>
+                    <label for="6">6</label>
+                    <input type="radio" name="number" id="6" value="6">
+                    <span class="break2"></span>
+                    <label for="7">7</label>
+                    <input type="radio" name="number" id="7" value="7">
+                    <span class="break2"></span>
+                    <label for="8">8</label>
+                    <input type="radio" name="number" id="8" value="8">
+                    <span class="break2"></span>
+                    <label for="9">9</label>
+                    <input type="radio" name="number" id="9" value="9">
+                    <span class="break2"></span>
+                    <label for="10">10</label>
+                    <input type="radio" name="number" id="10" value="10">
+
+                    <p>Ki a kedvenc karaktered?</p>
+                    <label for="characters">Kedvenc karakter:   </label>
+                    <input type="text" id="characters" name="characters" maxlength="20">
+
+                    <p>Melyik évadokat láttad?</p>
+
+                    <input type="checkbox" id="season1" name="season1" value="season1">
+                    <label for="season1">1. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season2" name="season2" value="season2">
+                    <label for="season2">2. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season3" name="season3" value="season3">
+                    <label for="season3">3. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season4" name="season4" value="season4">
+                    <label for="season4">4. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season5" name="season5" value="season5">
+                    <label for="season5">5. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season6" name="season6" value="season6">
+                    <label for="season6">6. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season7" name="season7" value="season7">
+                    <label for="season7">7. évad</label>
+                    <span class="break"></span>
+                    <input type="checkbox" id="season8" name="season8" value="season8">
+                    <label for="season8">8. évad</label>
+
+                    <p>Tetszett az oldal?</p>
+                    <label for="yes">Igen</label>
+                    <input type="radio" name="number1" id="yes" value="yes" checked>
+                    <div id="btn">
+                        <input type="submit" value="Elküld" onclick="alert('Sikeres küldés')">
+                        <input type="reset" value="Visszaállít" onclick="topFunction()">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a onclick="topFunction()" id="myBtn"><i class="icon-chevron-up"></i></a>
+
+        <footer>
+            <div>
+                <pre><span id="copyright">©</span> Copyright 2020   |   Czigány Kristóf Péter   |   LGLFAT</pre>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
